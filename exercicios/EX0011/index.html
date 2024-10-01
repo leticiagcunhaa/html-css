@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes
+    ou simplesmente aumente e diminua o tamanho do seu navegador.
+</p>   
+<picture>
+<source media="(max-width: 700px)" srcset="imagens/imagem p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/imagem m.png" type="image/png">
+<img src="imagens/imagem g.png" alt="Imagem flexível">
+</picture>
+
+<h1>Reproduzindo audio</h1>
+<p>Vamos apreder a reproduzir audios em HTML5</p>
+<audio preload="metadata" autoplay controls loop>
+    <source src="midias/The Fast and The Curious - Ezra Lipp.mp3" type="midia/mpeg">
+    <source src="midias/The Fast and The Curious - Ezra Lipp.ogg" type="midia/ogg">
+    <source src="midias/The Fast and The Curious - Ezra Lipp.wave" type="midia/wave">
+    <p>Infelizmente o seu navegador não consegue reproduzir audio
+        <a href="midias/The Fast and The Curious - Ezra Lipp.mp3"> Clique aqui para baixar o arquivo mp3</a>
+    </p>    
+</audio>
+<!--MP3, WAVE, OGG-->
+</body>
+</html>
